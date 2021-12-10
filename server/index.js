@@ -17,7 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Appends auth and api to the appropriate routes
-app.use('/api', require('./api'))
+app.use('/recipes', require('./api'))
 
  // Any remaining requests with an extension (.js, .css, etc.) send 404 to client
  app.use((req, res, next) => {
